@@ -1,7 +1,7 @@
 #include "rgba8888.h"
 
-unsigned int serialize_rgba8888(struct rgba8888 format) {
-  unsigned int output = 0;
+uint32_t serialize_rgba8888(struct rgba8888 format) {
+  uint32_t output = 0;
 
   output = output ^ format.r;
   output = output << 8;
@@ -14,7 +14,7 @@ unsigned int serialize_rgba8888(struct rgba8888 format) {
   return output;
 }
 
-struct rgba8888 deserialize_rgba8888(int format) {
+struct rgba8888 deserialize_rgba8888(uint32_t format) {
   struct rgba8888 output;
   output.r = 0;
   output.g = 0;
