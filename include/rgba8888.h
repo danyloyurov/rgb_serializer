@@ -12,4 +12,3 @@ unsigned int serialize_rgba8888(struct rgba8888 format);
 struct rgba8888 deserialize_rgba8888(int format);
 
 #endif // RGBA8888_H_
-

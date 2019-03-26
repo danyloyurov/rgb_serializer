@@ -28,4 +28,3 @@ struct rgba8888 deserialize_rgba8888(int format) {
 
   return output;
 }
-

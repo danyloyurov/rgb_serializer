@@ -9,4 +9,3 @@ source/rgb565.c
 
 include_directories(include/)
 add_executable(${PROJECT_NAME} ${SOURCE})
-

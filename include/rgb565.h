@@ -1,14 +1,15 @@
 #ifndef RGB565_H_
 #define RGB565_H_
 
+#include <stdint.h>
+
 struct rgb565 {
-  unsigned char r;
-  unsigned char g;
-  unsigned char b;
+  uint8_t r;
+  uint8_t b;
+  uint8_t g;
 };
 
-unsigned int serialize_rgb565(struct rgb565 format);
-struct rgb565 deserialize_rgb565(int format);
+uint16_t serialize_rgb565(struct rgb565 format);
+struct rgb565 deserialize_rgb565(uint16_t format);
 
 #endif // RGB565_H_
-
